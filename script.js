@@ -26,3 +26,11 @@ dropdownMenu.querySelectorAll("a").forEach(function (link) {
     dropdownButton.setAttribute("aria-expanded", "false");
   });
 });
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape" && dropdownMenu.classList.contains("show")) {
+    dropdownMenu.classList.remove("show");
+    dropdownButton.setAttribute("aria-expanded", "false");
+    dropdownButton.focus();
+  }
+});
