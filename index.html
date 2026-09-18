@@ -23,7 +23,16 @@
     <ul class="nav-links">
       <li><a href="#top">Home</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#work">Work</a></li>
+      <li class="dropdown">
+        <button id="dropdownBtn" class="dropdown-btn" aria-expanded="false" aria-haspopup="true">
+          Projects <span class="arrow">▼</span>
+        </button>
+        <ul id="dropdownMenu" class="dropdown-menu">
+          <li><a href="#project-grading">Student Grading System</a></li>
+          <li><a href="#project-ojt">OJT Tracker</a></li>
+          <li><a href="#project-clinic">Clinic Management System</a></li>
+        </ul>
+      </li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -120,7 +129,7 @@
       </div>
 
       <div class="project-list">
-        <article class="project">
+        <article class="project" id="project-grading">
           <span class="project-num mono">01</span>
           <div>
             <h3>Student Grading System</h3>
@@ -134,7 +143,7 @@
           <span class="project-tag">Desktop</span>
         </article>
 
-        <article class="project">
+        <article class="project" id="project-ojt">
           <span class="project-num mono">02</span>
           <div>
             <h3>OJT Tracker</h3>
@@ -148,7 +157,7 @@
           <span class="project-tag">Mobile</span>
         </article>
 
-        <article class="project">
+        <article class="project" id="project-clinic">
           <span class="project-num mono">03</span>
           <div>
             <h3>Clinic Management System</h3>
@@ -209,5 +218,6 @@
   </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
